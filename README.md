@@ -182,3 +182,18 @@ Linux 进程与文件
       结构，也就是两个进程的文件表项就会共用该v节点
 </pre>
 
+<pre>
+维护工具daemontools:
+
+      Daemontools是一款unix服务管理软件，提供一组工具来进行管理用户的一系列进程。
+      Daemontools包含svscanboot，svscan，supervise，svc，svok，svstat等一系列工具。
+      Daemontools主要有一下特点：
+                 1）增加删除service：只需要在/service中删除或增加link即可
+                 2）快速启动：在/service中增加服务， 即可自动在五秒内完成启动
+                 3）可靠重启：service down掉之后，自动重启
+                 5）简单可靠的控制：配置好 /service 之后， 使用svc命令，可以控制service daemon。
+                 6）干净的进程状态：重启的service进程，跟第一次启动的一样干净，纯洁无暇
+                 7）可移植：通过配置 /service，程序能在各个linux系统（Linux, BSD, 
+                    Solaris, etc）上，按相同的方式运行
+</pre>
+
